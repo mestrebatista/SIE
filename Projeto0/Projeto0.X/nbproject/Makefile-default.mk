@@ -57,17 +57,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=p0_tester.c timer2.c uart.c ../../CKDemos-V1.0/CKCommon/ConfigBits/adc.c
+SOURCEFILES_QUOTED_IF_SPACED=p0_tester.c timer2.c uart.c adc.c
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/p0_tester.o ${OBJECTDIR}/timer2.o ${OBJECTDIR}/uart.o ${OBJECTDIR}/_ext/120115095/adc.o
-POSSIBLE_DEPFILES=${OBJECTDIR}/p0_tester.o.d ${OBJECTDIR}/timer2.o.d ${OBJECTDIR}/uart.o.d ${OBJECTDIR}/_ext/120115095/adc.o.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/p0_tester.o ${OBJECTDIR}/timer2.o ${OBJECTDIR}/uart.o ${OBJECTDIR}/adc.o
+POSSIBLE_DEPFILES=${OBJECTDIR}/p0_tester.o.d ${OBJECTDIR}/timer2.o.d ${OBJECTDIR}/uart.o.d ${OBJECTDIR}/adc.o.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/p0_tester.o ${OBJECTDIR}/timer2.o ${OBJECTDIR}/uart.o ${OBJECTDIR}/_ext/120115095/adc.o
+OBJECTFILES=${OBJECTDIR}/p0_tester.o ${OBJECTDIR}/timer2.o ${OBJECTDIR}/uart.o ${OBJECTDIR}/adc.o
 
 # Source Files
-SOURCEFILES=p0_tester.c timer2.c uart.c ../../CKDemos-V1.0/CKCommon/ConfigBits/adc.c
+SOURCEFILES=p0_tester.c timer2.c uart.c adc.c
 
 
 
@@ -107,54 +107,54 @@ endif
 # ------------------------------------------------------------------------------------
 # Rules for buildStep: compile
 ifeq ($(TYPE_IMAGE), DEBUG_RUN)
-${OBJECTDIR}/p0_tester.o: p0_tester.c  .generated_files/flags/default/5b95f7096adb1bf4f5d9a7f7ad4bee10dfc2a22b .generated_files/flags/default/a725c5994d7ed112477efeb616be2ea3bc5b4889
+${OBJECTDIR}/p0_tester.o: p0_tester.c  .generated_files/flags/default/f4bafdb596ab524258cd2d61309c395e5d8b0ff1 .generated_files/flags/default/af031a62ccc0c18b099f063c5edfd8e7f9b606f2
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/p0_tester.o.d 
 	@${RM} ${OBJECTDIR}/p0_tester.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -MP -MMD -MF "${OBJECTDIR}/p0_tester.o.d" -o ${OBJECTDIR}/p0_tester.o p0_tester.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
 	
-${OBJECTDIR}/timer2.o: timer2.c  .generated_files/flags/default/5aa0290bcb4419dc9f6d5edb6f6a3b37701819a7 .generated_files/flags/default/a725c5994d7ed112477efeb616be2ea3bc5b4889
+${OBJECTDIR}/timer2.o: timer2.c  .generated_files/flags/default/db4f75f81c5057ea01a3c237118923718ad9f654 .generated_files/flags/default/af031a62ccc0c18b099f063c5edfd8e7f9b606f2
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/timer2.o.d 
 	@${RM} ${OBJECTDIR}/timer2.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -MP -MMD -MF "${OBJECTDIR}/timer2.o.d" -o ${OBJECTDIR}/timer2.o timer2.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
 	
-${OBJECTDIR}/uart.o: uart.c  .generated_files/flags/default/81100fa50275997019473a681a74659f6f9a0eb5 .generated_files/flags/default/a725c5994d7ed112477efeb616be2ea3bc5b4889
+${OBJECTDIR}/uart.o: uart.c  .generated_files/flags/default/dd1243cc2cd7d7800a46b899bd491d486db02abd .generated_files/flags/default/af031a62ccc0c18b099f063c5edfd8e7f9b606f2
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/uart.o.d 
 	@${RM} ${OBJECTDIR}/uart.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -MP -MMD -MF "${OBJECTDIR}/uart.o.d" -o ${OBJECTDIR}/uart.o uart.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
 	
-${OBJECTDIR}/_ext/120115095/adc.o: ../../CKDemos-V1.0/CKCommon/ConfigBits/adc.c  .generated_files/flags/default/57bef358011b735e91d3b6657d7a62cde168ed0c .generated_files/flags/default/a725c5994d7ed112477efeb616be2ea3bc5b4889
-	@${MKDIR} "${OBJECTDIR}/_ext/120115095" 
-	@${RM} ${OBJECTDIR}/_ext/120115095/adc.o.d 
-	@${RM} ${OBJECTDIR}/_ext/120115095/adc.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -MP -MMD -MF "${OBJECTDIR}/_ext/120115095/adc.o.d" -o ${OBJECTDIR}/_ext/120115095/adc.o ../../CKDemos-V1.0/CKCommon/ConfigBits/adc.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
+${OBJECTDIR}/adc.o: adc.c  .generated_files/flags/default/2614ebce054b9aa9c16b9bc6b7b26709fb568a63 .generated_files/flags/default/af031a62ccc0c18b099f063c5edfd8e7f9b606f2
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/adc.o.d 
+	@${RM} ${OBJECTDIR}/adc.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -MP -MMD -MF "${OBJECTDIR}/adc.o.d" -o ${OBJECTDIR}/adc.o adc.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
 	
 else
-${OBJECTDIR}/p0_tester.o: p0_tester.c  .generated_files/flags/default/b8d1a9d163d5a6cdcf0eb2f97aa179485e838c09 .generated_files/flags/default/a725c5994d7ed112477efeb616be2ea3bc5b4889
+${OBJECTDIR}/p0_tester.o: p0_tester.c  .generated_files/flags/default/246d11be8b152024d53fe00a3280ff90092d4f44 .generated_files/flags/default/af031a62ccc0c18b099f063c5edfd8e7f9b606f2
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/p0_tester.o.d 
 	@${RM} ${OBJECTDIR}/p0_tester.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -MP -MMD -MF "${OBJECTDIR}/p0_tester.o.d" -o ${OBJECTDIR}/p0_tester.o p0_tester.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
 	
-${OBJECTDIR}/timer2.o: timer2.c  .generated_files/flags/default/a21d3f7b5b230330c994f80815a1db38c06363fd .generated_files/flags/default/a725c5994d7ed112477efeb616be2ea3bc5b4889
+${OBJECTDIR}/timer2.o: timer2.c  .generated_files/flags/default/dd50f05f306a87e073384aa42bb8b5556640d630 .generated_files/flags/default/af031a62ccc0c18b099f063c5edfd8e7f9b606f2
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/timer2.o.d 
 	@${RM} ${OBJECTDIR}/timer2.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -MP -MMD -MF "${OBJECTDIR}/timer2.o.d" -o ${OBJECTDIR}/timer2.o timer2.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
 	
-${OBJECTDIR}/uart.o: uart.c  .generated_files/flags/default/b9ad0e21de7029302e544dfc11b8acc86722c897 .generated_files/flags/default/a725c5994d7ed112477efeb616be2ea3bc5b4889
+${OBJECTDIR}/uart.o: uart.c  .generated_files/flags/default/84356b02b9ae3156a4e195f7c6067fb84a0d5272 .generated_files/flags/default/af031a62ccc0c18b099f063c5edfd8e7f9b606f2
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/uart.o.d 
 	@${RM} ${OBJECTDIR}/uart.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -MP -MMD -MF "${OBJECTDIR}/uart.o.d" -o ${OBJECTDIR}/uart.o uart.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
 	
-${OBJECTDIR}/_ext/120115095/adc.o: ../../CKDemos-V1.0/CKCommon/ConfigBits/adc.c  .generated_files/flags/default/604207e7120649f13f635819753325fc033ad350 .generated_files/flags/default/a725c5994d7ed112477efeb616be2ea3bc5b4889
-	@${MKDIR} "${OBJECTDIR}/_ext/120115095" 
-	@${RM} ${OBJECTDIR}/_ext/120115095/adc.o.d 
-	@${RM} ${OBJECTDIR}/_ext/120115095/adc.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -MP -MMD -MF "${OBJECTDIR}/_ext/120115095/adc.o.d" -o ${OBJECTDIR}/_ext/120115095/adc.o ../../CKDemos-V1.0/CKCommon/ConfigBits/adc.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
+${OBJECTDIR}/adc.o: adc.c  .generated_files/flags/default/3798b9ab87c3d745ba3c92fb2386a961279d40a0 .generated_files/flags/default/af031a62ccc0c18b099f063c5edfd8e7f9b606f2
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/adc.o.d 
+	@${RM} ${OBJECTDIR}/adc.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -MP -MMD -MF "${OBJECTDIR}/adc.o.d" -o ${OBJECTDIR}/adc.o adc.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
 	
 endif
 

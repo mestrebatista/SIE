@@ -51,6 +51,13 @@ int setupTimer2(uint16_t Fout, uint8_t starter)
     return 0;// flag to confirm the func
 }
 
+void PWM(int duty){
+    OC1CONbits.OCM = 6; // PWM mode on OCx; fault pin disabled
+    OC1CONbits.OCTSEL = 0;// Use timer T2 as the time base for PWM generation
+    OC1RS = ((PR2+1)*duty)/256; // Ton constant
+    OC1CONbits.ON = 1; // Enable OC1 module
+}
+
 void pooling_T2(void)
 {
     while(IFS0bits.T2IF==0);  //wait for polling clock signal
