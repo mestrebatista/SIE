@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://www.netbeans.org/ns/project/1">
+    <type>com.microchip.mplab.nbide.embedded.makeproject</type>
+    <configuration>
+        <data xmlns="http://www.netbeans.org/ns/make-project/1">
+            <name>Projeto0</name>
+            <creation-uuid>9f5a6f07-9091-4556-87d6-ccd7e65e7085</creation-uuid>
+            <make-project-type>0</make-project-type>
+            <c-extensions>c</c-extensions>
+            <cpp-extensions/>
+            <header-extensions>h</header-extensions>
+            <asminc-extensions/>
+            <sourceEncoding>ISO-8859-1</sourceEncoding>
+            <make-dep-projects/>
+            <sourceRootList>
+                <sourceRootElem>../../CKDemos-V1.0/CKCommon/ConfigBits</sourceRootElem>
+                <sourceRootElem>../../CKDemos-V1.0/CKCommon/UART</sourceRootElem>
+                <sourceRootElem>../../CKDemos-V1.0/CKLedBlink.X</sourceRootElem>
+                <sourceRootElem>../../CKDemos-V1.0/CKTimerInt.X</sourceRootElem>
+                <sourceRootElem>../../CKDemos-V1.0/CKTimerPool.X</sourceRootElem>
+                <sourceRootElem>.</sourceRootElem>
+            </sourceRootList>
+            <confList>
+                <confElem>
+                    <name>default</name>
+                    <type>2</type>
+                </confElem>
+            </confList>
+            <formatting>
+                <project-formatting-style>false</project-formatting-style>
+            </formatting>
+        </data>
+    </configuration>
+</project>
