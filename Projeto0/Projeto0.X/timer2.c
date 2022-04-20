@@ -41,7 +41,7 @@ int setupTimer2(uint16_t Fout, uint8_t starter)
         T2CONbits.TCKPS=i; //devide by prescaler
         PR2=(PBCLOCK/(tckps_scaler[i]*Fout))-1; //PR value
         i--;
-    }while(PR2>=65535); //pr2 larger than 2^16bits
+    }while(PR2>65535); //pr2 larger than 2^16bits
     
     printf("PR2: %d\n\r",PR2);
     printf("prescaler: %d\n\r",i);
