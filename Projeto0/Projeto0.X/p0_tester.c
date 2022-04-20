@@ -50,8 +50,9 @@ int main(int argc, char** argv)
     
     while(1)
     {
-        pooling_T2();
-        
+        //start timer 2
+        //pooling_T2();
+    /*    
         //uint32_t max_count=10;
         //for(uint8_t i=0;i<=max_count;i++)
         //{
@@ -65,6 +66,12 @@ int main(int argc, char** argv)
             //        IFS0bits.T2IF=0;          //reset the timer interrupt flag
             //}
         //}
+    */
+        start_adc();
+        
+        val=(ADC1BUF0*3.3)/1023;
+        printf("Voltage:%f\n\r",val);
+        
     }
     return 0;
 }
